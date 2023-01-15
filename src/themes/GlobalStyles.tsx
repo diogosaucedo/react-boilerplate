@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+import { fonts } from './fonts';
+
+const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
@@ -8,19 +10,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: sans-serif;
+  html {
     font-size: 62.5%; // 1rem = 10px
-    font-weight: 400;
-
   }
 
-  html, body, #root {
-    min-height: 100%;
+  body {
+    font-family: ${fonts.primary}, sans-serif;
+    font-weight: 400;
   }
 
   a {
@@ -30,6 +26,7 @@ export default createGlobalStyle`
   ul {
     list-style: none;
   }
+
   h1,
   h2,
   h3,
@@ -39,3 +36,5 @@ export default createGlobalStyle`
     font-weight: 700;
   }
 `;
+
+export default GlobalStyles;
