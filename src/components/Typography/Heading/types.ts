@@ -1,6 +1,7 @@
 import React from 'react';
 
-type HeadingType = {
+type HeadingProps = {
+  type: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
   children: React.ReactNode;
   fontFamily?: string;
   fontSize?: string;
@@ -8,4 +9,4 @@ type HeadingType = {
   color?: string;
 };
 
-export default HeadingType;
+export default HeadingProps;

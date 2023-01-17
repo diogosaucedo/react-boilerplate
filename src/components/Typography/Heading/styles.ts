@@ -1,7 +1,8 @@
-import HeadingType from '../type';
 import styled from 'styled-components';
 
-const HeadingFour = styled.h4<HeadingType>`
+import HeadingProps from './types';
+
+const Heading = styled.h1<HeadingProps>`
   // Display
   font-family: ${({ fontFamily }) => fontFamily || 'inherit'};
   font-size: ${({ fontSize }) => fontSize};
@@ -9,4 +10,4 @@ const HeadingFour = styled.h4<HeadingType>`
   color: ${({ color }) => color};
 `;
 
-export { HeadingFour };
+export { Heading };
