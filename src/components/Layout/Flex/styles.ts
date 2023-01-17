@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import FlexType from './type';
 
-const Flex = styled.div<FlexType>`
+import FlexProps from './types';
+
+const Flex = styled.div<FlexProps>`
   // Display
   display: flex;
   flex-direction: ${({ flexDirection }) => flexDirection};

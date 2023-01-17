@@ -1,4 +1,4 @@
-type FlexType = {
+type FlexProps = {
   children: React.ReactNode;
   flexDirection?: string;
   flexWrap?: string;
@@ -16,4 +16,4 @@ type FlexType = {
   border?: string;
 };
 
-export default FlexType;
+export default FlexProps;

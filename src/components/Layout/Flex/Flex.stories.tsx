@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Flex from '.';
-import FlexType from './type';
+import React from 'react';
+
+import { Flex } from './Flex';
+import FlexProps from './types';
 
 export default {
   title: 'Components / Layout / Flex',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<FlexType> = (args) => <Flex {...args} />;
+const Template: Story<FlexProps> = (args) => <Flex {...args} />;
 
 export const basic = Template.bind({});
 
