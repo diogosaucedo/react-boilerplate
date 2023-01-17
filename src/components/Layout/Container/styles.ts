@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import ContainerType from './type';
 
-const Container = styled.div<ContainerType>`
+import ContainerProps from './types';
+
+const Container = styled.div<ContainerProps>`
   // Layout
   display: flex;
   flex-direction: column;

@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Container from '.';
-import ContainerType from './type';
+import React from 'react';
+
+import { Container } from './Container';
+import ContainerProps from './types';
 
 export default {
   title: 'Components / Layout / Container',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ContainerType> = (args) => <Container {...args} />;
+const Template: Story<ContainerProps> = (args) => <Container {...args} />;
 
 export const basic = Template.bind({});
 

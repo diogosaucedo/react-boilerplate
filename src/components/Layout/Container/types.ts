@@ -1,4 +1,4 @@
-type ContainerType = {
+type ContainerProps = {
   children: React.ReactNode;
   width?: string;
   height?: string;
@@ -9,4 +9,4 @@ type ContainerType = {
   border?: string;
 };
 
-export default ContainerType;
+export default ContainerProps;
