@@ -1,6 +1,6 @@
 import React from 'react';
 
-type InputType = {
+type InputProps = {
   type: 'email' | 'text' | 'tel' | 'url';
   value?: string;
   onChange?: (e: React.FormEvent<HTMLInputElement>) => void;
@@ -19,4 +19,4 @@ type InputType = {
   outline?: string;
 };
 
-export default InputType;
+export default InputProps;

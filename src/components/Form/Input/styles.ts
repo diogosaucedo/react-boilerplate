@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import InputType from './type';
 
-const Input = styled.input<InputType>`
+import InputProps from './types';
+
+const Input = styled.input<InputProps>`
   // Box Model
   width: ${({ width }) => width};
   height: ${({ height }) => height};
