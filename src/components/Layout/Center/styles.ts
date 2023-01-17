@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import CenterType from './type';
 
-const Center = styled.div<CenterType>`
+import CenterProps from './types';
+
+const Center = styled.div<CenterProps>`
   // Layout
   display: flex;
   align-items: center;

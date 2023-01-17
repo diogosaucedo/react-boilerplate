@@ -1,4 +1,4 @@
-type CenterType = {
+type CenterProps = {
   children: React.ReactNode;
   width?: string;
   height?: string;
@@ -8,4 +8,4 @@ type CenterType = {
   border?: string;
 };
 
-export default CenterType;
+export default CenterProps;

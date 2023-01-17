@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Center from '.';
-import CenterType from './type';
+import React from 'react';
+
+import { Center } from './Center';
+import CenterProps from './types';
 
 export default {
   title: 'Components / Layout / Center',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<CenterType> = (args) => <Center {...args} />;
+const Template: Story<CenterProps> = (args) => <Center {...args} />;
 
 export const basic = Template.bind({});
 
