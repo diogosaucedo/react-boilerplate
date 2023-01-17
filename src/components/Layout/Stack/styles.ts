@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import StackType from './type';
 
-const Stack = styled.div<StackType>`
+import StackProps from './types';
+
+const Stack = styled.div<StackProps>`
   // Layout
   display: flex;
   flex-direction: ${({ flexDirection }) => flexDirection};

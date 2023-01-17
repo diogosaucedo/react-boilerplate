@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Stack from '.';
-import StackType from './type';
+import React from 'react';
+
+import { Stack } from './Stack';
+import StackProps from './types';
 
 export default {
   title: 'Components / Layout / Stack',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<StackType> = (args) => <Stack {...args} />;
+const Template: Story<StackProps> = (args) => <Stack {...args} />;
 
 export const basic = Template.bind({});
 

@@ -1,4 +1,4 @@
-type StackType = {
+type StackProps = {
   children: React.ReactNode;
   flexDirection?: string;
   alignItems?: string;
@@ -10,4 +10,4 @@ type StackType = {
   border?: string;
 };
 
-export default StackType;
+export default StackProps;
