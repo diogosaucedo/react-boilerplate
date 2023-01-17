@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import WrapType from './type';
 
-const Wrap = styled.ul<WrapType>`
+import WrapProps from './types';
+
+const Wrap = styled.ul<WrapProps>`
   // Layout
   display: flex;
   flex-direction: ${({ flexDirection }) => flexDirection};

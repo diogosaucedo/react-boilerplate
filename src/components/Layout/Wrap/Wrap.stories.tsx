@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Wrap from '.';
-import WrapType from './type';
+import React from 'react';
+
+import WrapProps from './types';
+import { Wrap } from './Wrap';
 
 export default {
   title: 'Components / Layout / Wrap',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<WrapType> = (args) => <Wrap {...args} />;
+const Template: Story<WrapProps> = (args) => <Wrap {...args} />;
 
 export const basic = Template.bind({});
 

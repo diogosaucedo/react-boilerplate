@@ -1,4 +1,4 @@
-type WrapType = {
+type WrapProps = {
   children: React.ReactNode;
   flexDirection?: string;
   flexWrap?: string;
@@ -11,4 +11,4 @@ type WrapType = {
   border?: string;
 };
 
-export default WrapType;
+export default WrapProps;
