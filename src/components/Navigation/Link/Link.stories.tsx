@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Link from '.';
-import LinkType from './type';
+import React from 'react';
+
+import { Link } from './Link';
+import LinkProps from './types';
 
 export default {
   title: 'Components / Navigation / Link',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<LinkType> = (args) => <Link {...args} />;
+const Template: Story<LinkProps> = (args) => <Link {...args} />;
 
 export const basic = Template.bind({});
 

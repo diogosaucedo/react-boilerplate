@@ -1,7 +1,8 @@
-import Linktype from './type';
 import styled from 'styled-components';
 
-const Link = styled.a<Linktype>`
+import LinkProps from './types';
+
+const Link = styled.a<LinkProps>`
   // Display
   font-family: ${({ fontFamily }) => fontFamily || 'inherit'};
   font-weight: ${({ fontWeight }) => fontWeight || 'inherit'};

@@ -1,6 +1,6 @@
 import React from 'react';
 
-type Linktype = {
+type LinkProps = {
   children: React.ReactNode;
   href: string;
   target?: string;
@@ -12,4 +12,4 @@ type Linktype = {
   textDecoration?: string;
 };
 
-export default Linktype;
+export default LinkProps;
