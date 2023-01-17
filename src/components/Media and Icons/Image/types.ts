@@ -1,4 +1,4 @@
-type ImageType = {
+type ImageProps = {
   src: string;
   alt: string;
   width?: string;
@@ -7,4 +7,4 @@ type ImageType = {
   border?: string;
 };
 
-export default ImageType;
+export default ImageProps;

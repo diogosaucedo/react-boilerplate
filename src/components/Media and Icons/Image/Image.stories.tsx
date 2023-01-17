@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Image from '.';
-import ImageType from './type';
+import React from 'react';
+
+import { Image } from './Image';
+import ImageProps from './types';
 
 export default {
   title: 'Components / Media and Icons / Image',
@@ -11,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ImageType> = (args) => <Image {...args} />;
+const Template: Story<ImageProps> = (args) => <Image {...args} />;
 
 export const basic = Template.bind({});
 

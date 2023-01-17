@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import ImageType from './type';
 
-const Image = styled.img<ImageType>`
+import ImageProps from './types';
+
+const Image = styled.img<ImageProps>`
   // Box Model
   width: ${({ width }) => width};
   height: ${({ height }) => height};
