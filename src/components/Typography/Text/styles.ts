@@ -1,10 +1,11 @@
-import TextType from './type';
 import styled from 'styled-components';
 
-const Text = styled.p<TextType>`
+import TextProps from './types';
+
+const Text = styled.p<TextProps>`
   // Display
   font-family: ${({ fontFamily }) => fontFamily || 'inherit'};
-  font-size: ${({ fontSize }) => fontSize || '12px'};
+  font-size: ${({ fontSize }) => fontSize};
   font-weight: ${({ fontWeight }) => fontWeight || 400};
   color: ${({ color }) => color};
 `;

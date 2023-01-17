@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Text from '.';
-import TextType from './type';
+import React from 'react';
+
+import { Text } from './Text';
+import TextProps from './types';
 
 export default {
   title: 'Components / Typography / Text',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<TextType> = (args) => <Text {...args} />;
+const Template: Story<TextProps> = (args) => <Text {...args} />;
 
 export const basic = Template.bind({});
 

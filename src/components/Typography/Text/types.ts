@@ -1,6 +1,6 @@
 import React from 'react';
 
-type TextType = {
+type TextProps = {
   children: React.ReactNode;
   fontFamily?: string;
   fontSize?: string;
@@ -8,4 +8,4 @@ type TextType = {
   color?: string;
 };
 
-export default TextType;
+export default TextProps;
