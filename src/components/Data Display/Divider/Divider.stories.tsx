@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Divider from '.';
-import DividerType from './type';
+import React from 'react';
+
+import { Divider } from './Divider';
+import DividerProps from './types';
 
 export default {
   title: 'Components / Data Display / Divider',
@@ -11,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<DividerType> = (args) => <Divider {...args} />;
+const Template: Story<DividerProps> = (args) => <Divider {...args} />;
 
 export const basic = Template.bind({});
 basic.args = {};
