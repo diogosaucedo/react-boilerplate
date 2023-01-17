@@ -1,6 +1,6 @@
 import React from 'react';
 
-type NumberInputType = {
+type NumberInputProps = {
   type: 'number';
   value?: string;
   onChange?: (e: React.FormEvent<HTMLInputElement>) => void;
@@ -18,4 +18,4 @@ type NumberInputType = {
   outline?: string;
 };
 
-export default NumberInputType;
+export default NumberInputProps;

@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import NumberInput from '.';
-import NumberInputType from './type';
+import React from 'react';
+
+import { NumberInput } from './NumberInput';
+import NumberInputProps from './types';
 
 export default {
   title: 'Components / Form / NumberInput',
@@ -14,7 +15,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<NumberInputType> = (args) => <NumberInput {...args} />;
+const Template: Story<NumberInputProps> = (args) => <NumberInput {...args} />;
 
 export const basic = Template.bind({});
 

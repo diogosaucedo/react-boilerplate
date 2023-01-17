@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import NumberInputType from './type';
 
-const NumberInput = styled.input<NumberInputType>`
+import NumberInputProps from './types';
+
+const NumberInput = styled.input<NumberInputProps>`
   // Box Model
   width: ${({ width }) => width};
   height: ${({ height }) => height};
