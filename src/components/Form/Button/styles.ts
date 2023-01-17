@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import ButtonType from './type';
 
-const Button = styled.button<ButtonType>`
+import ButtonProps from './types';
+
+export const Button = styled.button<ButtonProps>`
   // Box Model
   width: ${({ width }) => width};
   height: ${({ height }) => height};
@@ -12,12 +13,12 @@ const Button = styled.button<ButtonType>`
   border: ${({ border }) => border};
   outline: none;
   color: ${({ color }) => color};
+  font-family: ${({ fontFamily }) => fontFamily || 'inherit'};
   font-size: ${({ fontSize }) => fontSize};
   text-decoration: ${({ textDecoration }) => textDecoration};
+
   :hover {
     cursor: pointer;
     ${({ hover }) => hover}
   }
 `;
-
-export { Button };

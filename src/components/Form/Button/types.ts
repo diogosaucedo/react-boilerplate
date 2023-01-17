@@ -1,6 +1,6 @@
 import React from 'react';
 
-type ButtonType = {
+type ButtonProps = {
   children: React.ReactNode;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   width?: string;
@@ -9,9 +9,10 @@ type ButtonType = {
   background?: string;
   border?: string;
   color?: string;
+  fontFamily?: string;
   fontSize?: string;
   textDecoration?: string;
   hover?: string;
 };
 
-export default ButtonType;
+export default ButtonProps;

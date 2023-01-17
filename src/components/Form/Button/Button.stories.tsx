@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Button from '.';
-import ButtonType from './type';
+import React from 'react';
+
+import { Button } from './Button';
+import ButtonProps from './types';
 
 export default {
   title: 'Components / Form / Button',
@@ -14,7 +15,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<ButtonType> = (args) => <Button {...args} />;
+const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const basic = Template.bind({});
 
