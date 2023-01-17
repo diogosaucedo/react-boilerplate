@@ -1,4 +1,4 @@
-type BoxType = {
+type BoxProps = {
   children: React.ReactNode;
   width?: string;
   height?: string;
@@ -8,4 +8,4 @@ type BoxType = {
   border?: string;
 };
 
-export default BoxType;
+export default BoxProps;

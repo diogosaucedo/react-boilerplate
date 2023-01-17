@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Box from '.';
-import BoxType from './type';
+import React from 'react';
+
+import { Box } from './Box';
+import BoxProps from './types';
 
 export default {
   title: 'Components / Layout / Box',
@@ -13,7 +14,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<BoxType> = (args) => <Box {...args} />;
+const Template: Story<BoxProps> = (args) => <Box {...args} />;
 
 export const basic = Template.bind({});
 

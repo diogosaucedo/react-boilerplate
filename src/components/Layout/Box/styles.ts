@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import BoxType from './type';
 
-const Box = styled.div<BoxType>`
+import BoxProps from './types';
+
+const Box = styled.div<BoxProps>`
   // Box Model
   width: ${({ width }) => width || 'fit-content'};
   height: ${({ height }) => height || 'fit-content'};
