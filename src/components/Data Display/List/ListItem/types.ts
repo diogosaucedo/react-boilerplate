@@ -1,8 +1,8 @@
 import React from 'react';
 
-type ListItemType = {
+type ListItemProps = {
   children: React.ReactNode;
   key?: number;
   color?: string;
 };
-export default ListItemType;
+export default ListItemProps;

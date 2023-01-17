@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import ListItemType from './type';
 
-const ListItem = styled.li<ListItemType>`
+import ListItemProps from './types';
+
+const ListItem = styled.li<ListItemProps>`
   color: ${({ color }) => color || 'inherit'};
 `;
 export { ListItem };

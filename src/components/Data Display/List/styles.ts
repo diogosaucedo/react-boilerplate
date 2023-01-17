@@ -1,7 +1,7 @@
-import ListType from '../type';
+import ListProps from './types';
 import styled from 'styled-components';
 
-const OrderedList = styled.ol<ListType>`
+export const List = styled.ul<ListProps>`
   // Layout
   display: flex;
   flex-direction: column;
@@ -13,5 +13,3 @@ const OrderedList = styled.ol<ListType>`
   font-weight: ${({ fontWeight }) => fontWeight};
   color: ${({ color }) => color};
 `;
-
-export { OrderedList };

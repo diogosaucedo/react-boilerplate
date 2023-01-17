@@ -1,6 +1,7 @@
 import React from 'react';
 
-type ListType = {
+type ListProps = {
+  type: 'ul' | 'ol';
   data?: Array<DataType>;
   gap?: string;
   fontFamily?: string;
@@ -13,4 +14,5 @@ type DataType = {
   id: number;
   value: React.ReactNode;
 };
-export default ListType;
+
+export default ListProps;
