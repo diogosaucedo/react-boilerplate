@@ -1,7 +1,8 @@
-import React from 'react';
 import { Meta, Story } from '@storybook/react';
-import Highlight from '.';
-import HighlightType from './type';
+import React from 'react';
+
+import { Highlight } from './Highlight';
+import HighlightProps from './types';
 
 export default {
   title: 'Components / Typography / Highlight',
@@ -11,7 +12,7 @@ export default {
   },
 } as Meta;
 
-const Template: Story<HighlightType> = (args) => <Highlight {...args} />;
+const Template: Story<HighlightProps> = (args) => <Highlight {...args} />;
 
 export const basic = Template.bind({});
 

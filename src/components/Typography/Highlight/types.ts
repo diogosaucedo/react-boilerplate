@@ -1,6 +1,6 @@
 import React from 'react';
 
-type HighlightType = {
+type HighlightProps = {
   children: React.ReactNode;
   fontFamily?: string;
   fontSize?: string;
@@ -9,4 +9,4 @@ type HighlightType = {
   background: string;
 };
 
-export default HighlightType;
+export default HighlightProps;
